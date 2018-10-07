@@ -6,6 +6,9 @@ import grails.transaction.Transactional
 @Transactional(readOnly = true)
 class ClienteController {
 
+    def cargarYSalir(){
+        // todo el codigo aquí
+    }
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
     def index(Integer max,Cliente cliente) {
