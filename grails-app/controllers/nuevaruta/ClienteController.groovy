@@ -8,6 +8,11 @@ class ClienteController {
 
     def cargarYSalir(){
         // todo el codigo aquí
+        def cargarDatos
+        def eliminar
+        if(cargarDatos){
+            // aquí haria algo
+        }
     }
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
 
