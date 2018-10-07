@@ -40,7 +40,7 @@ class BootStrap {
         if (!Vehiculo.count()){
             new Vehiculo(marca: "toyota",
                     modelo: "yaris",
-                    patente: "bk-bx-75",
+                    patente: "cw-yb-88",
                     estado: "ACTIVO",
                     descripcion: "vehiculo de gran tamaño y económico",
                     sucursal: 1,
