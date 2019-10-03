@@ -32,7 +32,7 @@ class BootStrap {
         }
         if (!TipoVehiculo.count()){
             new TipoVehiculo(nombre: "Sedan").save(failOnError:true)
-            new TipoVehiculo(nombre: "Estation Vagon").save(failOnError:true)
+            new TipoVehiculo(nombre: "Station Vagon").save(failOnError:true)
             new TipoVehiculo(nombre: "Hatchback").save(failOnError:true)
             new TipoVehiculo(nombre: "Camioneta").save(failOnError:true)
             new TipoVehiculo(nombre: "City Car").save(failOnError:true)
