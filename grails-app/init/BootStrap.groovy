@@ -36,6 +36,7 @@ class BootStrap {
             new TipoVehiculo(nombre: "Hatchback").save(failOnError:true)
             new TipoVehiculo(nombre: "Camioneta").save(failOnError:true)
             new TipoVehiculo(nombre: "City Car").save(failOnError:true)
+            new TipoVehiculo(nombre: "Limosina").save(failOnError:true)
         }
         if (!Vehiculo.count()){
             new Vehiculo(marca: "toyota",
