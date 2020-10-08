@@ -26,7 +26,7 @@
         </div>
     </nav>
     <ul class="errors">
-        <li>Error: Page Not Found (404)</li>
+        <li>Error: Página no encontrada (404)</li>
         <li>Path: ${request.forwardURI}</li>
     </ul>
 </body>
