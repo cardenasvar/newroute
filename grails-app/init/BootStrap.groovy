@@ -18,16 +18,10 @@ class BootStrap {
                     estado: "activo"
             ).save(failOnError:true)
         }
-        if (!Sucursal.count()){
-            new Sucursal(rut: "76.816.854-3",
-                    nombre: "nuevaRuta Puerto Montt",
-                    direccion: "Puerto Montt, #376, alerce sur",
-                    logo: "/img/logo.png",
-                    region: "Puerto Montt",
-                    ciudad: "Puerto Montt",
-                    fono: "123456689",
-                    usuario: "1",
-                    correo: "contacto@nuevaruta.cl"
+        if (!Sucursal.count()) {
+            new Sucursal(
+                    rut: "76.816.854-3", nombre: "nuevaRuta Puerto Montt", direccion: "Puerto Montt, #376, alerce sur", logo: "/img/logo.png", region: "Puerto Montt", ciudad: "Puerto Montt", fono: "123456689", usuario: "1", correo: "contacto@nuevaruta.cl"
+                    rut: "77.855.000-1", nombre: "nuevaRuta Valdivia", direccion: "Valdivia, Las Cascadas #150, Alerce sur", logo: "/img/logo2.png", region: "Puerto Montt", ciudad: "Puerto Montt", fono: "123456689", usuario: "1", correo: "contacto@nuevaruta.cl"
             ).save(failOnError:true)
         }
         if (!TipoVehiculo.count()){
@@ -36,6 +30,7 @@ class BootStrap {
             new TipoVehiculo(nombre: "Hatchback").save(failOnError:true)
             new TipoVehiculo(nombre: "Camioneta").save(failOnError:true)
             new TipoVehiculo(nombre: "City Car").save(failOnError:true)
+            new TipoVehiculo(nombre: "Limosina").save(failOnError:true)
         }
         if (!Vehiculo.count()){
             new Vehiculo(marca: "toyota",
