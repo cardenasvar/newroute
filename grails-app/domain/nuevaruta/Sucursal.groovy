@@ -1,7 +1,7 @@
 package nuevaruta
 
 class Sucursal {
-    String rut, direccion, nombre, logo, region, ciudad, fono, correo, estado
+    String rut, direccion, nombre, logo, region, ciudad, fono, correo, estado, fechaCreacion, fechaTermino
     static belongsTo = [usuario:Usuario]
     static hasMany = [contrato:Contrato, vehiculo:Vehiculo]
     static constraints = {
