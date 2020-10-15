@@ -5,8 +5,9 @@ import java.sql.Time
 class Reserva {
 
     Date fechaCreacion=new Date()
-    String fechaRetiro, fechaDevolucion, estado
-    Integer precioVehiculo, monto
+    Date fechaDevolucion
+    String fechaRetiro, estado
+    Integer precioVehiculo, monto, valorDepreciacion
     String horaRetiro, horaDevolucion
     static belongsTo = [vehiculo:Vehiculo, cliente:Cliente]
     static hasMany = [pago:Pago]
