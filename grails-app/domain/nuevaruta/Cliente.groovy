@@ -1,8 +1,10 @@
 package nuevaruta
 
 class Cliente {
-    String rut, nombres, paterno, materno, telefono, correo, estado, clave, facebookID, fechaNacimiento
+    String rut, nombres, paterno, materno, telefono, correo, estado, clave, facebookID,
+            fechaNacimiento
     Date fechaCreacion = new Date()
+    Date fechaDesde = new Date()
     Date fechaHasta = new Date()
     static belongsTo = []
     static hasMany = [reserva:Reserva, pago:Pago,contrato:Contrato]
