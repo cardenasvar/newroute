@@ -6,6 +6,7 @@ class Cliente {
     Date fechaCreacion = new Date()
     Date fechaDesde = new Date()
     Date fechaHasta = new Date()
+    Date runTime = new Date()
     static belongsTo = []
     static hasMany = [reserva:Reserva, pago:Pago,contrato:Contrato]
     static constraints = {
